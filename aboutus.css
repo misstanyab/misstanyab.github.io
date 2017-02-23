@@ -3,4 +3,7 @@
  	text-align: center;
  }
 h1 {font size: 500px;}
+body {
+	background-image: url("insidelib.jpg");
+	background-size: cover;}
 </style>
