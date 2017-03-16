@@ -6,6 +6,9 @@ h1 {
 text-align: center;
 position: top 50%; bottom:50%; 
 }
+#header, #nav {
+background-image: url("Aberdeen2.jpg") repeat;
+}
 h1 {
 font-family: 'Playfair Display', serif;
 font-style: normal;
