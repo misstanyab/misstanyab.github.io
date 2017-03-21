@@ -8,6 +8,9 @@
     height: 80%;
     opacity: 0.7;
 }
+.TanyaB2 {
+    position: center;
+}
 .person:hover {
     border-color: #f1f1f1;
 }
