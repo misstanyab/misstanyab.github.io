@@ -144,13 +144,13 @@ $(document).ready(function(){
 .btn:hover, .btn:focus {
     border: 1px solid #333;
     background-color: #fff;
-    color: #000;
+    color: #fff;
 }
 
 /* Add a dark background color with a little bit see-through */ 
 .navbar {
     margin-bottom: 0;
-    background-color: #2d2d30;
+    background-color: #fff;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
@@ -159,7 +159,7 @@ $(document).ready(function(){
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
+    color: #fff !important;
 }
 
 /* On hover, the links will turn white */
@@ -315,11 +315,15 @@ $(document).ready(function(){
 
 <style>
 .bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
+    background: white;
+    color: white;
 }
 .bg-1 h3 {color: #fff;}
 .bg-1 p {font-style: italic;}
 </style>
+<style>
+.nav-tabs li a {
+    color: #777;
+}
 
 </script>
