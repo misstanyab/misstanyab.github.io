@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="Home.css">
 <html lang="en">
 <head>
@@ -8,8 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="Home.css">
 
   <title>University of Aberdeen Startup</title>
-  <meta charset="utf-8">
-</head>
+  </head>
 <body>
 <!--Carousel starts-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -232,29 +232,22 @@
   </div>
 </div>
 
-<!--Maps-->
-<style>
-#googleMap {
-    width: 100%; /* Span the entire width of the screen */
-    height: 400px; /* Set the height to 400 pixels */
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); /* Change the color of the map to black and white * /
-}
-</style>
+	
+<div id="googleMap" style="width:100%;height:400px;"></div>
 
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
-<script src=https://www.google.co.uk/maps/place/University+of+Aberdeen/@57.16476,-2.1037144,17z/data=!3m1!4b1!4m5!3m4!1s0x48840e0400000000:0xfa5ca7f4f50108e!8m2!3d57.16476!4d-2.1015257></script>
-<!--Google maps ends-->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
 
 <!--making scrolling smoother-->
      <script>
@@ -295,7 +288,7 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <img src="Logo2.jpg">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -335,8 +328,6 @@ footer {
     background-color: #2d2d30;
     color: #f5f5f5;
     padding: 40px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 footer a {
