@@ -2,6 +2,11 @@
 <link rel="stylesheet" type="text/css" href="Home.css">
 <html lang="en">
 <head>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="Home.css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="Home.css">
+
   <title>University of Aberdeen Startup</title>
   <meta charset="utf-8">
 </head>
@@ -243,13 +248,35 @@ marker.setMap(map);
 <script src=https://www.google.co.uk/maps/place/University+of+Aberdeen/@57.16476,-2.1037144,17z/data=!3m1!4b1!4m5!3m4!1s0x48840e0400000000:0xfa5ca7f4f50108e!8m2!3d57.16476!4d-2.1015257></script>
 <!--Google maps ends-->
 
-
-<script>
+<!--making scrolling smoother-->
+     <script>
 $(document).ready(function(){
-    // Initialize Tooltip
-    $('[data-toggle="tooltip"]').tooltip(); 
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if 
+  });
 })
 </script>
+<!--ENDS-->
 
 <!--Navigation bar-->
 <nav class="navbar navbar-default navbar-fixed-top">
