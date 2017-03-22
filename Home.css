@@ -9,6 +9,10 @@
     height: 50%;
 }
 
+.Logo2 {opacity: 0.9;
+
+}
+
 .person:hover {
     border-color: #f1f1f1;
 }
