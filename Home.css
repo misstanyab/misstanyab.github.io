@@ -77,18 +77,18 @@
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand { 
-    color: #000000 !important;
+    color: ##808080 !important;
 }
 
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
-    color: #000000 !important;
+    color: #808080 !important;
 }
 
 /* The active link */
 .navbar-nav li.active a {
-    color: #000000 !important;
-    background-color:#fff !important;
+    color: #808080 !important;
+    background-color:#ffffff !important;
 }
 
 /* Remove border color from the collapsible button */
