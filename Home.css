@@ -9,7 +9,7 @@
     height: 50%;
 }
 
-.Logo2 {opacity: 0.9;
+.Logo2 {opacity: 0.9;bg
 
 }
 
@@ -235,14 +235,7 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 })
 
-<style>
-.bg-1 {
-    background: white;
-    color: white;
-}
-.bg-1 h3 {color: #fff;}
-.bg-1 p {font-style: italic;}
-</style>
+
 <style>
 .nav-tabs li a {
     color: #777;
