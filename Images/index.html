@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="Home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <html lang="en">
 <head>
@@ -72,6 +76,7 @@
 
   
   <!--About us-->
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
   <div class="container text-center">
   <h3>ABOUT</h3>
   <p>Since 2017 we have successfully been enabling students to sell, buy or swap their textbooks, notes or any accessories such as calculators. This platform is free for all students.</p>
@@ -81,10 +86,12 @@
  
  <div class="row">
   <div class="col-sm-4">
+  <div class="w3-third">
     <p class="text-center"><strong>Tanya Bhayani</strong></p><br>
     <a href="#demo" data-toggle="collapse">
       <img src="TanyaB3.jpg" class="img-circle person" alt="Tanya">
     </a>
+    </div>
     <div id="demo" class="collapse">
       <p>Guitarist and Lead Vocalist</p>
       <p>Loves long walks on the beach</p>
@@ -92,20 +99,24 @@
     </div>
   </div>
   <div class="col-sm-4">
+  <div class="w3-third">
     <p class="text-center"><strong>UoA Library</strong></p><br>
     <a href="#demo2" data-toggle="collapse">
       <img src="LibraryR.jpg" class="img-circle person" alt="Library">
     </a>
+    </div>
     <div id="demo2" class="collapse">
       <p>Since 2017 we have successfully been enabling students to sell, buy or swap their textbooks, notes or any accessories such as calculators. This platform is free for all students.</p>
       <p>We appreciate any donations and suggestions of how to improve the platform. We are open to new ideas and can take criticism.</p>
       </div>
   </div>
   <div class="col-sm-4">
+  <div class="w3-third">
     <p class="text-center"><strong>Britten Holter</strong></p><br>
     <a href="#demo3" data-toggle="collapse">
       <img src="Britten3.jpg" class="img-circle person" alt="Britten">
     </a>
+    </div>
     <div id="demo3" class="collapse">
       <p>Hello! My name is Britten Holter and I am an undergraduate student at University of Aberdeen.</p>
       <p>Previously I studied in London at Southbank International School where I finished the International Baccalaureate Program.</p>
@@ -327,6 +338,15 @@ $(document).ready(function(){
     </div>
   </div>
 </nav>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+</div>
+
+
 <!--Scrollspy-->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
