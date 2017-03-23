@@ -5,8 +5,8 @@
     background-color: #ffffff;
 }
 
-#aboutus {
-    padding: 80px 120px;
+.tour {
+    padding: auto;
     width: 100%;
     padding: 30px 0px;
     background-color: #D3D3D3;
@@ -148,10 +148,7 @@
     width: 100%;
 }
 
-#footer a:hover {
-    color: #777;
-    text-decoration: none;
-}
+
 
 </style>
 
