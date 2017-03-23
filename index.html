@@ -290,11 +290,15 @@ $(document).ready(function(){
       <img src="Logo2.jpg">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#band">ABOUT</a></li>
-        <li><a href="#tour">SELL AND BUY</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+   <nav>
+    <ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Sellandbuy.html">SELL AND BUY</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
             <span class="caret"></span>
@@ -310,16 +314,31 @@ $(document).ready(function(){
     </div>
   </div>
 </nav>
-<!--Scrollspy-->
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<div id="about" class="container">
-<div id="sell and buy" class="container">
-<div id="contact" class="container">
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
 
 <!--Navigation bar ends-->
+
+<!--Google maps-->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBizVnXBxZe3QnWxTYStUGIDmPk_Y0oADY&callback=myMap"></script>
+
+<!--End-->
 
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
