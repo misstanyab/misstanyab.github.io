@@ -1,5 +1,6 @@
 .container {
     padding: 80px 120px;
+    
 }
 
 .person {
@@ -26,6 +27,7 @@
 
 .carousel-caption h3 {
     color: #fff !important;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 600px) {
