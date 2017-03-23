@@ -27,7 +27,13 @@
 
 .carousel-caption h3 {
     color: #fff !important;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+}
+.heading h3 {
+    letter-spacing: 1px;
+}
+.mapgoog h3 {
+    letter-spacing: 1px;
 }
 
 @media (max-width: 600px) {
@@ -79,7 +85,7 @@
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand { 
-    color: ##808080 !important;
+    color: #808080 !important;
 }
 
 /* On hover, the links will turn white */
@@ -128,21 +134,9 @@ footer a:hover {
     color: #777;
     text-decoration: none;
 }
+
 </style>
 
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
-</footer>
-
-<script>
-$(document).ready(function(){
-    // Initialize Tooltip
-    $('[data-toggle="tooltip"]').tooltip(); 
-})
-</script>
 /* On hover, the color of .btn will transition to white with black text */
 .btn:hover, .btn:focus {
     border: 1px solid #333;
@@ -180,23 +174,34 @@ $(document).ready(function(){
 
 <style>
 /* Add a dark background color to the footer */
-footer {
+#footer {
     background-color: #2d2d30;
+    position: absolute;
+    bottom: 0;
     color: #f5f5f5;
     padding: 32px;
+    width: 100%;
 }
-
-footer a {
+#footer
+{
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+    height: 150px;
+}
+#footer a {
     color: #f5f5f5;
+    width: 1200px;
 }
 
-footer a:hover {
+#footer a:hover {
     color: #777;
     text-decoration: none;
 }
 body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
+    margin: 0px;
 }
 
 .navbar {
