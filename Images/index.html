@@ -241,34 +241,27 @@
 </div>
 
 <!--Google maps-->	
-<head>
-    <style>
-      #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
-  </head>
-  <body>
-    <h3>Can't find us?</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBizVnXBxZe3QnWxTYStUGIDmPk_Y0oADY=initMap">
-    </script>
-   
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBizVnXBxZe3QnWxTYStUGIDmPk_Y0oADY&callback=myMap"></script>
+
+    
 <!--Ends-->
 
 
@@ -339,12 +332,13 @@ $(document).ready(function(){
   </div>
 </nav>
 
-
+<div class="w3-bar>
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">SELL AND BUY</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+  <a href="#sellandbuy" class="w3-bar-item w3-button w3-padding-large">SELL AND BUY</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#more" class="w3-bar-item w3-button w3-padding-large">MORE</a>
+ </div>
 </div>
 
 
